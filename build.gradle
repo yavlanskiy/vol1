@@ -1,0 +1,21 @@
+plugins {
+    id 'groovy'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.17'
+
+    implementation(
+            files("lib/lib_ojdbc8-19.3.0.0.jar"),
+    )}
+
+test {
+    useJUnitPlatform()
+}
